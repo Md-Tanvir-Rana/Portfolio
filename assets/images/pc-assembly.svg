@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgHw" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" rx="12" fill="url(#bgHw)" stroke="#334155" stroke-width="2"/>
+
+  <!-- Header Badge -->
+  <rect x="20" y="20" width="310" height="34" rx="6" fill="#0f172a" stroke="#10b981" stroke-width="1.5"/>
+  <text x="35" y="42" fill="#10b981" font-family="system-ui, sans-serif" font-weight="700" font-size="13">IT HARDWARE LAB &amp; DEPLOYMENT</text>
+  <text x="245" y="42" fill="#38bdf8" font-family="monospace" font-size="11">WIN 11 / BIOS</text>
+
+  <!-- Left: Desktop Tower Case Schematic -->
+  <g transform="translate(60, 80)">
+    <!-- Case Outline -->
+    <rect x="0" y="0" width="220" height="330" rx="10" fill="#0b0f19" stroke="#38bdf8" stroke-width="2.5"/>
+    <rect x="15" y="15" width="190" height="300" rx="6" fill="#131c31" stroke="#1e293b"/>
+
+    <!-- Fans (RGB Ring) -->
+    <circle cx="110" cy="70" r="38" fill="#0f172a" stroke="#06b6d4" stroke-width="3" stroke-dasharray="8 4"/>
+    <circle cx="110" cy="70" r="10" fill="#06b6d4"/>
+
+    <!-- Motherboard Plate -->
+    <rect x="30" y="130" width="160" height="130" rx="4" fill="#064e3b" stroke="#10b981" stroke-width="1.5"/>
+    <!-- CPU Socket -->
+    <rect x="80" y="150" width="40" height="40" rx="2" fill="#94a3b8" stroke="#f1f5f9"/>
+    <text x="100" y="175" fill="#0f172a" font-family="monospace" font-size="10" font-weight="bold" text-anchor="middle">CPU</text>
+    <!-- RAM Slots -->
+    <rect x="135" y="145" width="6" height="50" rx="1" fill="#38bdf8"/>
+    <rect x="145" y="145" width="6" height="50" rx="1" fill="#38bdf8"/>
+    <!-- PCIe GPU Slot -->
+    <rect x="40" y="210" width="120" height="12" rx="2" fill="#f59e0b"/>
+    <!-- M.2 NVMe SSD -->
+    <rect x="60" y="235" width="40" height="10" rx="1" fill="#ec4899"/>
+    
+    <!-- PSU Section -->
+    <rect x="25" y="275" width="170" height="35" rx="3" fill="#0f172a" stroke="#64748b"/>
+    <text x="110" y="297" fill="#94a3b8" font-family="monospace" font-size="11" text-anchor="middle">650W 80+ BRONZE PSU</text>
+  </g>
+
+  <!-- Right: IT Support Workflow Cards -->
+  <!-- Step 1: Assembly & POST -->
+  <g transform="translate(320, 80)">
+    <rect x="0" y="0" width="430" height="68" rx="8" fill="#131c31" stroke="#38bdf8" stroke-width="1.5"/>
+    <circle cx="35" cy="34" r="18" fill="#0284c7"/>
+    <text x="35" y="40" fill="#ffffff" font-family="system-ui" font-weight="bold" font-size="14" text-anchor="middle">1</text>
+    <text x="70" y="30" fill="#f1f5f9" font-family="system-ui" font-weight="700" font-size="14">Component Assembly &amp; POST Check</text>
+    <text x="70" y="50" fill="#94a3b8" font-family="system-ui" font-size="12">Thermal paste application, cable management, RAM dual-channel verify</text>
+  </g>
+
+  <!-- Step 2: BIOS / UEFI Configuration -->
+  <g transform="translate(320, 160)">
+    <rect x="0" y="0" width="430" height="68" rx="8" fill="#131c31" stroke="#10b981" stroke-width="1.5"/>
+    <circle cx="35" cy="34" r="18" fill="#059669"/>
+    <text x="35" y="40" fill="#ffffff" font-family="system-ui" font-weight="bold" font-size="14" text-anchor="middle">2</text>
+    <text x="70" y="30" fill="#f1f5f9" font-family="system-ui" font-weight="700" font-size="14">UEFI BIOS Setup &amp; Diagnostics</text>
+    <text x="70" y="50" fill="#94a3b8" font-family="system-ui" font-size="12">TPM 2.0, Secure Boot enabled, XMP profile configuration &amp; MemTest86</text>
+  </g>
+
+  <!-- Step 3: Windows 10/11 Clean Install -->
+  <g transform="translate(320, 240)">
+    <rect x="0" y="0" width="430" height="68" rx="8" fill="#131c31" stroke="#8b5cf6" stroke-width="1.5"/>
+    <circle cx="35" cy="34" r="18" fill="#7c3aed"/>
+    <text x="35" y="40" fill="#ffffff" font-family="system-ui" font-weight="bold" font-size="14" text-anchor="middle">3</text>
+    <text x="70" y="30" fill="#f1f5f9" font-family="system-ui" font-weight="700" font-size="14">OS Deployment &amp; Driver Suite</text>
+    <text x="70" y="50" fill="#94a3b8" font-family="system-ui" font-size="12">GPT/UEFI partitioning, chipset, LAN/Wi-Fi drivers &amp; Windows Update</text>
+  </g>
+
+  <!-- Step 4: Backup & Recovery Strategy -->
+  <g transform="translate(320, 320)">
+    <rect x="0" y="0" width="430" height="68" rx="8" fill="#131c31" stroke="#f59e0b" stroke-width="1.5"/>
+    <circle cx="35" cy="34" r="18" fill="#d97706"/>
+    <text x="35" y="40" fill="#ffffff" font-family="system-ui" font-weight="bold" font-size="14" text-anchor="middle">4</text>
+    <text x="70" y="30" fill="#f1f5f9" font-family="system-ui" font-weight="700" font-size="14">System Backup &amp; Disaster Recovery</text>
+    <text x="70" y="50" fill="#94a3b8" font-family="system-ui" font-size="12">System Image restore point, Macrium Reflect / WinPE rescue media</text>
+  </g>
+
+  <!-- Bottom status bar -->
+  <g transform="translate(60, 422)">
+    <circle cx="10" cy="0" r="4" fill="#10b981"/>
+    <text x="25" y="4" fill="#64748b" font-family="monospace" font-size="11">Status: Hardware Verified | BSOD Free | 100% Operational</text>
+  </g>
+</svg>

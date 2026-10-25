@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="potGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b45309"/>
+      <stop offset="50%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#78350f"/>
+    </linearGradient>
+    <linearGradient id="riceGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="50%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#ea580c"/>
+    </linearGradient>
+    <linearGradient id="warmGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(245, 158, 11, 0.4)"/>
+      <stop offset="100%" stop-color="rgba(245, 158, 11, 0)"/>
+    </linearGradient>
+    <filter id="steamBlur">
+      <feGaussianBlur stdDeviation="4" />
+    </filter>
+  </defs>
+
+  <rect width="100%" height="100%" fill="#030712"/>
+  <circle cx="300" cy="180" r="160" fill="url(#warmGlow)"/>
+
+  <g transform="translate(0, 10)">
+    <path d="M270 120 Q260 90 280 70 Q300 50 290 30" stroke="rgba(254, 240, 138, 0.6)" stroke-width="3" fill="none" stroke-linecap="round" filter="url(#steamBlur)"/>
+    <path d="M310 115 Q330 85 315 65 Q300 45 320 25" stroke="rgba(254, 240, 138, 0.5)" stroke-width="3" fill="none" stroke-linecap="round" filter="url(#steamBlur)"/>
+    <path d="M340 125 Q355 95 345 75" stroke="rgba(254, 240, 138, 0.4)" stroke-width="2.5" fill="none" stroke-linecap="round" filter="url(#steamBlur)"/>
+
+    <ellipse cx="300" cy="265" rx="190" ry="30" fill="#0f172a" stroke="#d97706" stroke-width="2"/>
+    <ellipse cx="300" cy="260" rx="165" ry="22" fill="#1e293b" stroke="rgba(245,158,11,0.3)" stroke-width="1"/>
+
+    <path d="M180 180 Q160 250 300 260 Q440 250 420 180 Z" fill="url(#potGrad)" stroke="#fbbf24" stroke-width="2"/>
+    <rect x="155" y="185" width="25" height="12" rx="6" fill="#78350f" stroke="#fbbf24" stroke-width="1"/>
+    <rect x="420" y="185" width="25" height="12" rx="6" fill="#78350f" stroke="#fbbf24" stroke-width="1"/>
+
+    <ellipse cx="300" cy="178" rx="115" ry="38" fill="url(#riceGrad)"/>
+    <path d="M195 178 Q300 120 405 178 Z" fill="url(#riceGrad)"/>
+
+    <ellipse cx="270" cy="165" rx="22" ry="16" fill="#d97706" stroke="#78350f" stroke-width="1"/>
+    <ellipse cx="335" cy="155" rx="28" ry="18" fill="#831843" stroke="#f43f5e" stroke-width="1"/>
+    <polygon points="300,140 304,148 312,148 306,154 308,162 300,157 292,162 294,154 288,148 296,148" fill="#451a03"/>
+    <path d="M315 142 Q328 135 332 145 Q325 152 315 142 Z" fill="#10b981"/>
+    <path d="M260 150 Q250 142 245 152 Q252 158 260 150 Z" fill="#10b981"/>
+    <ellipse cx="220" cy="175" rx="4" ry="1.5" fill="#ffffff"/>
+    <ellipse cx="245" cy="165" rx="5" ry="2" fill="#ffffff"/>
+    <ellipse cx="370" cy="170" rx="5" ry="2" fill="#ffffff"/>
+    <ellipse cx="345" cy="178" rx="4" ry="1.5" fill="#ffffff"/>
+    <ellipse cx="290" cy="180" rx="5" ry="2" fill="#ffffff"/>
+  </g>
+
+  <rect x="170" y="325" width="260" height="32" rx="16" fill="rgba(15,23,42,0.85)" stroke="#f59e0b" stroke-width="1"/>
+  <text x="300" y="346" fill="#fbbf24" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle" letter-spacing="1.5">🍛 KACCHI BIRYANI &amp; FOODIE LOVE</text>
+</svg>

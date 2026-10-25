@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MD. TANVIR RANA - Curriculum Vitae</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #0284c7;
+      --primary-dark: #0369a1;
+      --text-dark: #0f172a;
+      --text-body: #1e293b;
+      --text-muted: #475569;
+      --bg: #ffffff;
+      --border: #0f172a;
+      --border-light: #cbd5e1;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      color: var(--text-body);
+      background-color: #f1f5f9;
+      line-height: 1.45;
+      padding: 2rem 1rem;
+    }
+
+    /* Action bar */
+    .action-bar {
+      max-width: 850px;
+      margin: 0 auto 1.5rem auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .action-group {
+      display: flex;
+      gap: 0.75rem;
+      align-items: center;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.6rem 1.25rem;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      border: none;
+    }
+
+    .btn-primary {
+      background: #0284c7;
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: #0369a1;
+    }
+
+    .btn-success {
+      background: #059669;
+      color: white;
+    }
+
+    .btn-success:hover {
+      background: #047857;
+    }
+
+    .btn-secondary {
+      background: #e2e8f0;
+      color: #334155;
+    }
+
+    .btn-secondary:hover {
+      background: #cbd5e1;
+    }
+
+    /* Resume Document Container */
+    .resume-container {
+      max-width: 850px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 3.5rem 3.5rem 3rem 3.5rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 25px rgba(0, 0, 0, 0.08);
+      position: relative;
+    }
+
+    /* Header */
+    .header-layout {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+      gap: 1.5rem;
+    }
+
+    .header-info {
+      flex: 1;
+      text-align: center;
+    }
+
+    .candidate-name {
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: #1e3a8a;
+      letter-spacing: 0.5px;
+      margin-bottom: 0.5rem;
+      text-transform: uppercase;
+    }
+
+    .contact-line {
+      font-size: 0.92rem;
+      color: #334155;
+      font-weight: 500;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 0.35rem 0.5rem;
+    }
+
+    .contact-line a {
+      color: #0284c7;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .contact-line a:hover {
+      text-decoration: underline;
+    }
+
+    .header-photo {
+      width: 110px;
+      height: 125px;
+      border-radius: 4px;
+      object-fit: cover;
+      border: 1px solid #cbd5e1;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      flex-shrink: 0;
+    }
+
+    /* Section Headings */
+    section {
+      margin-bottom: 1.35rem;
+    }
+
+    h2 {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: #0f172a;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      border-bottom: 1.8px solid #0f172a;
+      padding-bottom: 0.2rem;
+      margin-bottom: 0.65rem;
+    }
+
+    p {
+      font-size: 0.92rem;
+      color: #1e293b;
+      line-height: 1.55;
+    }
+
+    /* Subheadings */
+    .subhead-title {
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: #0f172a;
+      margin-bottom: 0.25rem;
+    }
+
+    .subhead-item {
+      margin-bottom: 0.75rem;
+    }
+
+    /* Bullet List */
+    ul.bullet-list {
+      list-style-type: disc;
+      margin-left: 1.4rem;
+      font-size: 0.91rem;
+      color: #1e293b;
+    }
+
+    ul.bullet-list li {
+      margin-bottom: 0.25rem;
+      line-height: 1.5;
+    }
+
+    /* Education Item */
+    .edu-item {
+      margin-bottom: 0.75rem;
+    }
+
+    .edu-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-size: 0.95rem;
+    }
+
+    .edu-degree {
+      font-weight: 700;
+      color: #0f172a;
+    }
+
+    .edu-dates {
+      font-weight: 600;
+      color: #0f172a;
+      font-size: 0.88rem;
+    }
+
+    .edu-institute {
+      font-weight: 500;
+      color: #334155;
+      font-size: 0.9rem;
+      margin-bottom: 0.25rem;
+    }
+
+    /* Print Styles */
+    @media print {
+      body {
+        background: transparent;
+        padding: 0;
+      }
+      .resume-container {
+        box-shadow: none;
+        padding: 0;
+        max-width: 100%;
+        margin: 0;
+      }
+      .action-bar {
+        display: none !important;
+      }
+    }
+
+    @media (max-width: 650px) {
+      .resume-container {
+        padding: 2rem 1.5rem;
+      }
+      .header-layout {
+        flex-direction: column-reverse;
+        text-align: center;
+      }
+      .candidate-name {
+        font-size: 1.8rem;
+      }
+      .edu-header {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Action Toolbar -->
+  <div class="action-bar">
+    <a href="../../index.html" class="btn btn-secondary">← Back to Portfolio</a>
+    <div class="action-group">
+      <a href="MD_TANVIR_RANA_CV.pdf" download="MD_TANVIR_RANA_CV.pdf" class="btn btn-success" title="Download exact uploaded PDF CV">
+        📥 Download Official PDF
+      </a>
+      <button onclick="window.print()" class="btn btn-primary" title="Print or save as PDF via browser">
+        🖨️ Print / Save as PDF
+      </button>
+    </div>
+  </div>
+
+  <!-- CV Sheet Container -->
+  <div class="resume-container">
+    <!-- Header -->
+    <header class="header-layout">
+      <div class="header-info">
+        <h1 class="candidate-name">MD. TANVIR RANA</h1>
+        <div class="contact-line">
+          <span>Chudanga, Bangladesh – 7300</span>
+          <span>•</span>
+          <span><a href="tel:01992545067" style="color:inherit; text-decoration:none;">01992545067</a></span>
+          <span>•</span>
+          <span><a href="mailto:tanvir734415@gmail.com">tanvir734415@gmail.com</a></span>
+          <span>•</span>
+          <span><a href="https://md-tanvir-rana.github.io/Portfolio/" target="_blank">https://md-tanvir-rana.github.io/Portfolio/</a></span>
+        </div>
+      </div>
+      <img src="../images/profile.jpg" alt="MD. Tanvir Rana" class="header-photo">
+    </header>
+
+    <!-- Summary Section -->
+    <section>
+      <h2>SUMMARY</h2>
+      <p>
+        Computer Science and Technology diploma student at Jashore Polytechnic Institute with practical experience in Cisco Packet Tracer labs, routing, VLANs, ACLs, PC assembly, Windows installation, and basic IT troubleshooting. Seeking an entry-level IT Support or Networking role to apply technical knowledge, strengthen practical skills, and contribute to reliable IT operations.
+      </p>
+    </section>
+
+    <!-- Projects & Practical Labs Section -->
+    <section>
+      <h2>PROJECTS &amp; PRACTICAL LABS</h2>
+      <div class="subhead-item">
+        <div class="subhead-title">Cisco Packet Tracer Routing &amp; Networking Labs</div>
+        <ul class="bullet-list">
+          <li>Designed and simulated network topologies using Cisco Packet Tracer.</li>
+          <li>Practiced static, default, and dynamic routing, VLANs, inter-VLAN routing, and ACL configuration.</li>
+        </ul>
+      </div>
+
+      <div class="subhead-item">
+        <div class="subhead-title">PC Assembly &amp; Windows Installation</div>
+        <ul class="bullet-list">
+          <li>Practiced desktop PC assembly, Windows and driver installation, and basic hardware/software troubleshooting.</li>
+          <li>Performed basic backup and recovery tasks.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section>
+      <h2>SKILLS</h2>
+      <ul class="bullet-list">
+        <li><strong>Networking &amp; Security:</strong> Cisco Packet Tracer, Static Routing, Default Routing, RIP, RIPv2, OSPF, EIGRP, BGP, VLAN, Inter-VLAN Routing, ACL Configuration, Home Router Configuration</li>
+        <li><strong>IT Support &amp; Hardware:</strong> PC Assembly, Windows Installation, Driver Installation, Basic Hardware &amp; Software Troubleshooting, Backup &amp; Recovery</li>
+        <li><strong>Additional Skills:</strong> Basic Computer Operations, CapCut Video Editing</li>
+      </ul>
+    </section>
+
+    <!-- Training & Certifications Section -->
+    <section>
+      <h2>TRAINING &amp; CERTIFICATIONS</h2>
+      <ul class="bullet-list">
+        <li>IT Support Services – Level 3 — NSDA</li>
+        <li>IT Support Services – Level 4 — NSDA</li>
+        <li>Basic Computer Training</li>
+      </ul>
+    </section>
+
+    <!-- Education Section -->
+    <section>
+      <h2>EDUCATION</h2>
+      <div class="edu-item">
+        <div class="edu-header">
+          <span class="edu-degree">Diploma in Engineering</span>
+          <span class="edu-dates">March 2023 - Present</span>
+        </div>
+        <div class="edu-institute">Jessore Polytechnic Institute</div>
+        <ul class="bullet-list">
+          <li>Studying programming, networking, and cybersecurity as core subjects.</li>
+        </ul>
+      </div>
+
+      <div class="edu-item">
+        <div class="edu-header">
+          <span class="edu-degree">Civil</span>
+          <span class="edu-dates">Jan 2020 - Sep 2022</span>
+        </div>
+        <div class="edu-institute">Hashada Secondary School</div>
+        <ul class="bullet-list">
+          <li>Gained foundational knowledge of civil engineering, including construction materials, building techniques, technical drawing, and basic construction practices.</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+</body>
+</html>
